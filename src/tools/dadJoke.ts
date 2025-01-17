@@ -3,9 +3,9 @@ import type { ToolFn } from '../../types'
 import fetch from 'node-fetch'
 
 export const dadJokeToolDefinition = {
-  name: 'dad_joke',
+  name: 'weather',
   parameters: z.object({}),
-  description: 'get a dad joke',
+  description: 'use this tool to get weather in Boston',
 }
 
 type Args = z.infer<typeof dadJokeToolDefinition.parameters>
